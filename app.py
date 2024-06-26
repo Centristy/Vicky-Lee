@@ -25,7 +25,13 @@ def contacts():
 def projects():
     """Show contact information:"""
 
-        
     return render_template('projects.html')
+
+
+@app.route('/about', methods=["GET"])
+def about():
+    """Show story information:"""
+        
+    return render_template('about.html')
     
 
